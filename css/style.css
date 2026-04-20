@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(249, 249, 249);
+}
+.parent{
+    perspective: 100%;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+.card , .front , .back{
+    width: 200px;
+    height: 180px;
+}
+.card{
+    position: relative;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+}
+.front , .back{
+    position: absolute;
+}
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+    box-shadow: 1px 1px 25px 10px rgb(0, 0, 0) inset;
+    border-radius: 10px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.back{
+    transform: rotatey(180deg);
+    box-shadow: 1px 1px 80px 2px rgb(0, 0, 0) inset;
+    border-radius: 10px;
+    height: 300px;
+}
+.front1{
+    background-image: url(../images/CAPPUCCINO-COFFEE.png);
+    background-size: cover;  
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
+    box-shadow: 1px 1px 25px 10px rgb(0, 0, 0) inset;
+    border-radius: 10px;
+}
+.back1{
+    transform: rotatey(180deg);
+    box-shadow: 1px 1px 80px 2px rgb(0, 0, 0) inset;
+    border-radius: 10px;
+    height: 300px;
+}
+.card:hover{
+    transform: rotatey(180deg);
+}
+.h2-card1{
+    font-size: 15px;
+    margin-top: auto;
+    margin-left: 20px;
+    padding-top: 200px;
+    color: #000000;
+}
+button{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background: 0;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 15px;
+}
+.price{
+    margin-top: 45px;
+}
+.info{
+    margin-top: 30px;
+}
+.card1{
+    margin-left: 50px;
+}
+.span-card1{
+    margin-top: 15px;
+}
+p{
+    margin-left: 15px;
+}
+.Espresso{
+    margin-top: 5px;
+}
+/* ////////////////////////////////////// */
+.card2{
+    float: left;
+    margin-left: 350px;
+    margin-top: -180px;
+}
+.front2{
+    background-image: url(../images/CLASSIC-COFFEE.png);
+    background-size: cover;
+}
+.h2-card2{
+    font-size: 15px;
+    margin-top: 300px;
+    margin-left: 40px;
+}
+/* //////////////////////////////////////////////////// */
+.card3{
+    margin-top: -180px;
+    margin-left: 650px;
+}
+.front3{
+    background-image: url(../images/CLASSIC-ICED-COFFEE.png);
+    background-size: cover;
+}
+.h2-card3{
+    font-size: 15px;
+    margin-top: 300px;
+    margin-left: 18px;
+}
+/* ///////////////////////////////////// */
+.card4{
+    margin-top: -180px;
+    margin-left: 950px;
+}
+.front4{
+    background-image: url(../images/COFFEE-WITH-MILK.png);
+    background-size: cover;
+}
+.h2-card4{
+    font-size: 15px;
+    margin-top: 300px;
+    margin-left: 25px;
+}
+/* //////////////////////////////////// */
+.card5{
+    margin-top: -180px;
+    margin-left: 1250px;
+}
+.front5{
+    background-image: url(../images/Cold\ Brew\ Iced\ Coffee\ With\ A\ Lid\ And\ Ice.png);
+    background-size: cover;
+}
+.h2-card5{
+    font-size: 15px;
+    margin-top: 300px;
+    margin-left: 55px;
+}
+/* //////////////////////////////////// */
+.card6{
+    margin: 160px 0  0 50px;
+}
+.front6{
+    background-image: url(../images/ICED-COFFEE-MOCHA.png);
+    background-size: cover;
+    height: 330px;
+}
+.back6{
+    height: 330px;
+}
+.h2-card6{
+    font-size: 15px;
+    margin-top: 330px;
+    margin-left: 20px;
+}
+/* ////////////////////////////////// */
+.card7{
+    margin: -180px 0  0 350px;
+}
+.front7{
+    background-image: url(../images/ICED-LATTEE.png);
+    background-size: cover;
+    height: 330px;
+}
+.back7{
+    height: 330px;
+}
+.h2-card7{
+    font-size: 15px;
+    margin-top: 330px;
+    margin-left: 50px;
+}
+/* ///////////////////////////////////////////// */
+.card8{
+    margin: -180px 0  0 650px;
+}
+.front8{
+    background-image: url(../images/MILKED-COFFEE.png);
+    background-size: cover;
+    height: 330px;
+}
+.back8{
+    height: 330px;
+}
+.h2-card8{
+    font-size: 15px;
+    margin-top: 330px;
+    margin-left: 40px;
+}
+/* ///////////////////////////////////// */
+.card9{
+    margin: -180px 0  0 950px;
+}
+.front9{
+    background-image: url(../images/MOCHA-COFFEE.png);
+    background-size: cover;
+    height: 330px;
+}
+.back9{
+    height: 330px;
+}
+.h2-card9{
+    font-size: 15px;
+    margin-top: 330px;
+    margin-left: 45px;
+}
+/* ////////////////////////////////////////////////// */
+.card10{
+    margin: -180px 0  0 1250px;
+}
+.front10{
+    background-image: url(../images/VANILLA-LATTEE.png);
+    background-size: cover;
+    height: 330px;
+}
+.back10{
+    height: 330px;
+}
+.h2-card10{
+    font-size: 15px;
+    margin-top: 330px;
+    margin-left: 45px;
+}
+
+
+
+
